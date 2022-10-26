@@ -7,7 +7,9 @@
     Things
   </h1>
   {# <p>Some stuff about things goes here.</p> #}
-  {{ form.as_p }}
-  <input type="submit" value="Submit"></input>
+  <form action="{% url 'home' %}" method="post">
+    {{ form.as_p }}
+    <input type="submit" value="Submit"></input>
+  </form>
 </body>
 </html>
